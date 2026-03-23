@@ -1,9 +1,11 @@
 # ===== Data (large files) =====
 data/raw/*.dat
+data/raw/*.pkl
 data/raw/*.h5
 data/raw/*.hdf5
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/README.md
 !data/raw/.gitkeep
 
 # ===== Python =====
