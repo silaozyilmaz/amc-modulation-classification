@@ -13,6 +13,8 @@ Bu doküman, **Yapay Zekaya Giriş** dersi proje yaşam döngüsü (CRISP-DM / M
 3. Aynı push/tag turunda veya hemen ardından bu dosyada **«Mevcut kayıtlı tag’ler»** tablosuna yeni satır ekleyin: tag adı, kısa not, mümkünse hangi ders haftası / CRISP fazıyla örtüştüğü.
 4. Aşağıdaki **Hafta ↔ Tag** tablosu **referanstır**; repoda henüz o kapsam yoksa tabloyu değiştirmeniz gerekmez. Gerçek durum her zaman tag tablosu + commit geçmişindedir.
 
+**İsteğe bağlı — milestone dalları:** Tag ile **aynı commit**’te `release/v0.H.0` gibi kalıcı bir dal tutmak, yalnızca o fazın anlık koduna (`git switch release/v0.2.0` vb.) dönmeyi kolaylaştırır. **Dal adı olarak doğrudan `v0.H.0` kullanmayın:** repoda aynı isimde tag varken `git checkout v0.H.0` belirsizlik uyarısı verebilir.
+
 Böylece önce sabit bir “hedef versiyon planı”na uymaya çalışmak yerine, **ne pushlandıysa dokümantasyon ona göre güncellenir**; ders rubriği için de hangi haftanın hangi tag ile karşılandığını geriye dönük net görebilirsiniz.
 
 ---
