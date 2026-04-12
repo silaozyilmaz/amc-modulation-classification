@@ -1,7 +1,9 @@
 # ===== Data (large files) =====
-data/raw/*.dat
-data/raw/*.h5
-data/raw/*.hdf5
+# Not: Düz `data/raw/*.hdf5` alt klasörleri (örn. radioml_2018/) kaçırır.
+data/raw/**/*.pkl
+data/raw/**/*.dat
+data/raw/**/*.h5
+data/raw/**/*.hdf5
 data/processed/*
 !data/processed/.gitkeep
 !data/raw/.gitkeep
@@ -48,10 +50,11 @@ models/*.onnx
 !models/.gitkeep
 
 # ===== Results =====
-results/*.png
-results/*.csv
-results/*.json
+results/**/*.png
+results/**/*.csv
+results/**/*.json
 !results/.gitkeep
+!results/**/.gitkeep
 
 # ===== IDE =====
 .vscode/
