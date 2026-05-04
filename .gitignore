@@ -33,6 +33,7 @@ wheels/
 # Virtual environments
 .env
 .venv/
+.mplconfig/
 venv/
 ENV/
 env/
@@ -47,7 +48,12 @@ models/*.pth
 models/*.pkl
 models/*.h5
 models/*.onnx
+models/results/**/*.png
+models/results/**/*.joblib
+models/results/**/*.txt
+models/results/**/*.json
 !models/.gitkeep
+!models/results/.gitkeep
 
 # ===== Results =====
 results/**/*.png
